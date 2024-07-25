@@ -127,7 +127,7 @@ function Drop:Add(object, ...)
 end
 
 function Drop:IsMouseInteracting()
-	return DoesAncestryInclude(self:GetParent(), GetMouseFocus())
+	return DoesAncestryIncludeAny(self:GetParent(), GetMouseFoci())
 end
 
 
